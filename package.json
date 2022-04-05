@@ -1,0 +1,27 @@
+{
+  "name": "lehigh-edu-shu225",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --target=esnext --outfile=build/out.js --format=esm",
+    "nodemon": "nodemon --watch \"src/**\" --ext \"js,ts,json\" --exec \"yarn build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shun-ueda/lehigh-edu-shu225.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shun-ueda/lehigh-edu-shu225/issues"
+  },
+  "homepage": "https://github.com/shun-ueda/lehigh-edu-shu225#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.31"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10"
+  }
+}
